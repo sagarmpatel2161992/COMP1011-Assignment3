@@ -1,8 +1,8 @@
 
 /**
  * @author SAGAR
- * Program Description - gianplanet class which ectends planet class and implements iHasMoons and iHasRings interfaces 
- * Version: 1.0 19th February 2015
+ * Program Description - gianplanet class which extends planet class and implements ihasmoons and ihasrings interfaces
+ * Version: 1.0 4th February 2015
  *  
  *
  */
@@ -21,17 +21,24 @@ public class giantPlanet extends Planet implements iHasMoons, iHasRings {
 	
 	// hasMoons method declared with boolean Data type
 	public boolean hasMoons() {
-		
+		if (super.getMoonCount() > 0) {
+			return true;	// return true if condition satisfied
+		}
+		return false;		//return false if condition not satisfied
 	}
 	
 	//hasRings method declared with boolean data type
 	public boolean hasRings() {
-		
+		if (super.getRingCount() > 0) {
+			return true;	// return true if condition satisfied
+		}
+		return false;		// return false if condition satisfied
 	}
 
 	// toString method declared of String data type
 	@Override
 	public String toString() {
-		
+		// TODO Auto-generated method stub
+		return super.toString();	// return string
 	}
 }
