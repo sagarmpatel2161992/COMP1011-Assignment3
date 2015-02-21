@@ -1,3 +1,12 @@
+
+/**
+ * @author SAGAR
+ * Program Description - class extends planet and implements ihasmoon and ihasrongs interface . 
+ * have method to check planet is habitable or not    
+ * Version: 1.0 19th February 2015
+ *  
+ *
+ */
 //class terrestialPlanet declared which extends Planet class and implements iHasMoons and iHasRings
 public class terrestialPlanet extends Planet implements iHabitable, iHasMoons {
 	//variable oxygen initialized with of data type boolean
